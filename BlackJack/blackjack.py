@@ -6,6 +6,7 @@ from random import shuffle
 cards_surface = list('🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂭🂮'+'🂱🂲🂳🂴🂵🂶🂷🂸🂹🂺🂻🂽🂾'+'🃁🃂🃃🃄🃅🃆🃇🃈🃉🃊🃋🃍🃎'+'🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛🃝🃞')
 cards_style = [f'<span style="font-size: 96px; color: {c};">' for c in ['MidnightBlue', 'Red', 'Red', 'MidnightBlue']]
 
+st.set_page_config(page_title='Blackjack')
 st.title('🂡 Blackjack 🂫')
 
 with st.expander('How to play'):

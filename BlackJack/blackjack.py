@@ -6,11 +6,11 @@ from random import shuffle
 cards_surface = list('🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂭🂮'+'🂱🂲🂳🂴🂵🂶🂷🂸🂹🂺🂻🂽🂾'+'🃁🃂🃃🃄🃅🃆🃇🃈🃉🃊🃋🃍🃎'+'🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛🃝🃞')
 cards_style = [f'<span style="font-size: 96px; color: {c};">' for c in ['MidnightBlue', 'Red', 'Red', 'MidnightBlue']]
 
-st.title('Blackjack')
+st.title('🂡 Blackjack 🂫')
 
 with st.expander('How to play'):
     st.markdown('''
-- You and the automated (fool) dealer are the only players.
+- You and the AI (artificial idiot) dealer are the only players.
 - Press `Start` button to start. You are initially given two cards. To take another, press `Hit`. If your total exceeds 21, you automatically loose. Go to the next session.
 - Once you are ready, press `Showdown`.
 - The dealer deals cards for him. He is simple-minded. He takes cards until they reach 17. As long as the total is in between 17 and 21, he does not take any further. Naturally, when the total exceeds 21, he looses. 

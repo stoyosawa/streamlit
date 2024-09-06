@@ -29,7 +29,6 @@ MESSAGES = {
 }
 
 
-@st.cache_resource
 def get_model(model=MODEL):
     pipe = pipeline('sentiment-analysis', model=model)
     return pipe

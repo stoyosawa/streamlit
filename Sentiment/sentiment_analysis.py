@@ -1,4 +1,5 @@
 #!/usr/bin/env -S python -m streamlit run
+# 2024: ST Version 1.01
 
 import streamlit as st
 from transformers import pipeline

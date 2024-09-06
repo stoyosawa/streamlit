@@ -1,5 +1,5 @@
 #!/usr/bin/env -S python -m streamlit run
-# 2024: ST Version 1.01
+# 2024: ST Version 1.02
 
 import streamlit as st
 from transformers import pipeline
@@ -30,7 +30,10 @@ MESSAGES = {
 
 
 def get_model(model=MODEL):
-    pipe = pipeline('sentiment-analysis', model=model)
+    try:
+        pipe = pipeline('sentiment-analysis', model=model)
+    except Exception as e:
+        st.text(e)
     return pipe
 
 

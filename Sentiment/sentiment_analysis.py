@@ -33,7 +33,7 @@ def get_model(model=MODEL):
     try:
         pipe = pipeline('sentiment-analysis', model=model)
     except Exception as e:
-        st.text(e)
+        st.markdown(e)
     return pipe
 
 

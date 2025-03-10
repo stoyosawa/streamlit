@@ -1,2 +1,11 @@
-torch
+# 2025-03-11
+# Streamlit はデフォルトで入っているので不要。
+# 以下は Streamlit を入れたときの依存パッケージ（アルファベット順）。
+# altair, attrs, blinker, cachetools, certifi, charset-normalizer, click, gitdb, gitpython, idna,
+# jinja2, jsonschema, jsonschema-specifications, MarkupSafe, narwhals, numpy, packaging, pandas,
+# pillow, protobuf, pyarrow, pydeck, python-dateutil, pytz, referencing, requests, rpds-py, six,
+# smmap, streamlit, tenacity, toml, tornado, typing-extensions, tzdata, urllib3, watchdog
+#
+sentencepiece
 transformers
+torch

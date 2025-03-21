@@ -2,7 +2,7 @@
 
 <img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png" width="300">
 
-このリポジトリでは、[Streamlit](https://streamlit.io/)＋[Python](https://docs.python.org/ja/3/)ベースのWebアプリケーション2点のコードを公開しています。カードゲームのブラックジャックと、[Hugging Face](https://huggingface.co/)にあるモデルを用いた感情分析アプリです。これらはStreamlitコミュニティで運用されているので、以下のURLから実際に試すことができます。
+このリポジトリでは、[Streamlit](https://streamlit.io/)＋[Python](https://docs.python.org/ja/3/)ベースのWebアプリケーション2点のコードを公開しています。カードゲームのブラックジャックと、[Hugging Face](https://huggingface.co/)にあるモデルを用いた感情分析アプリです。これらはStreamlitコミュニティで運用されているので、以下のURLから実際に試せます。
 
 - Blackjack ... [https://sat-blackjack.streamlit.app/](https://sat-blackjack.streamlit.app/)
 - Sentiment analysis ... [https://sat-sentiment.streamlit.app/](https://sat-sentiment.streamlit.app/)

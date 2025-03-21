@@ -1,4 +1,7 @@
 #!/usr/bin/env -S python -m streamlit run
+# ©2025 Satoshi Toyosawa
+# 2024-04-18: Initial implementation.
+# 2025-03-21: Published via Qiita
 
 import streamlit as st
 from random import shuffle
@@ -9,7 +12,8 @@ cards_style = [f'<span style="font-size: 96px; color: {c};">' for c in ['Midnigh
 st.set_page_config(page_title='Blackjack')
 st.title('🂡 Blackjack 🂫')
 
-with st.expander('How to play'):
+col1, col2 = st.columns(2)
+with col1.expander('🇬🇧  How to play'):
     st.markdown('''
 - You and the AI (artificial idiot) dealer are the only players.
 - Press `Start` button to start. You are initially given two cards. To take another, press `Hit`. If your total exceeds 21, you automatically loose. Go to the next session.
@@ -17,6 +21,14 @@ with st.expander('How to play'):
 - The dealer deals cards for him. He is simple-minded. He takes cards until they reach 17. As long as the total is in between 17 and 21, he does not take any further. Naturally, when the total exceeds 21, he looses. 
 - The JSON data on the sidebar shows the cummulative scores. To clear, reload from your browser button.
 - This game only adds up numbers on the cards. Nothing fancy. It does not allow you to 'split' or 'double-down'. No bets either.
+''')
+
+with col2.expander('🇯🇵  遊びかた'):
+    st.markdown('''
+- コンピュータ対ヒトの1対1勝負です。えらくシンプルなルールで動いているので、カジノスタイルを想像していたらごめんなさい（なにしろ、全部で200行以下ですので、賢いわけないです）。
+- 左パネルの［Start］ボタンをクリックすると、カードが2枚配られます。もう1枚取るなら［Hit］をクリックします。21を超えると、自動的に負けです。頃合いがよければ、［Showdown］から勝負に出ます。
+- ディーラーは手札が16以下なら無条件にカードを引きます（そして、しばしば自爆します）。17以上になったら勝負に出ます。
+- JSONフォーマットのスコアは累計です。画面をリロードすればリセットされます。
 ''')
 
 
@@ -148,7 +160,10 @@ container_console = st.container(border=True)
 container_console.write(st.session_state.message)
 
 
-st.sidebar.button('Start', disabled=st.session_state.states_buttons['Start'], on_click=clicked_start)
-st.sidebar.button('Hit', disabled=st.session_state.states_buttons['Hit'], on_click=clicked_hit)
-st.sidebar.button('Showdown', disabled=st.session_state.states_buttons['Showdown'], on_click=clicked_showdown)
-st.sidebar.write(st.session_state.history)
+with st.sidebar:
+    st.button('Start', disabled=st.session_state.states_buttons['Start'], on_click=clicked_start)
+    st.button('Hit', disabled=st.session_state.states_buttons['Hit'], on_click=clicked_hit)
+    st.button('Showdown', disabled=st.session_state.states_buttons['Showdown'], on_click=clicked_showdown)
+    st.write(st.session_state.history)
+    st.markdown('本アプリケーションは、[『作ってわかる［入門］Streamlit』](https://gihyo.jp/book/2025/978-4-297-14764-8)の第9章で紹介したものです。コードの説明やクラウドへの展開方法などはそちらを参照してください。')
+    st.image('http://image.gihyo.co.jp/assets/images/cover/2025/9784297147648.jpg')

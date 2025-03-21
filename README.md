@@ -17,7 +17,8 @@ The sentiment application uses a model trained on Japanese corpus. The program a
 <a href="https://gihyo.jp/book/2025/978-4-297-14764-8">技術評論社</a> |
 <a href="https://www.amazon.co.jp/dp/4297147645">Amazon.co.jp</a> |
 <a href="https://www.yodobashi.com/product/100000009004071953/">ヨドバシ</a> |
-<a href="https://books.rakuten.co.jp/rk/bbc9cea531f231fc8be07aff0d7da559/">楽天</a>
+<a href="https://books.rakuten.co.jp/rk/bbc9cea531f231fc8be07aff0d7da559/">楽天</a> |
+<a href="https://honto.jp/ebook/pd_34122316.html">Honto</a>
 】
 
 <img src="http://image.gihyo.co.jp/assets/images/cover/2025/9784297147648.jpg" height="400">

@@ -2,6 +2,7 @@
 # ©2025 Satoshi Toyosawa
 # 2024-04-18: Initial implementation.
 # 2025-03-21: Published via Qiita
+# 2025-09-11: Tested on Streamlit version 1.49.1（書籍では 2024-10-01 の 1.39.0）
 
 import streamlit as st
 from random import shuffle

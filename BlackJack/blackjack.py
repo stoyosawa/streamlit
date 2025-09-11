@@ -2,7 +2,7 @@
 # ©2025 Satoshi Toyosawa
 # 2024-04-18: Initial implementation.
 # 2025-03-21: Published via Qiita
-# 2025-09-11: Tested on Streamlit version 1.49.1（書籍では 2024-10-01 の 1.39.0）
+# 2025-09-11: Tested on Streamlit version 1.49.1（書籍では 2024-10-01 の 1.39.0）。st.html の仕様変更有
 
 import streamlit as st
 from random import shuffle
@@ -20,7 +20,7 @@ with col1.expander('🇬🇧  How to play'):
 - Press `Start` button to start. You are initially given two cards. To take another, press `Hit`. If your total exceeds 21, you automatically loose. Go to the next session.
 - Once you are ready, press `Showdown`.
 - The dealer deals cards for him. He is simple-minded. He takes cards until they reach 17. As long as the total is in between 17 and 21, he does not take any further. Naturally, when the total exceeds 21, he looses. 
-- The JSON data on the sidebar shows the cummulative scores. To clear, reload from your browser button.
+- The JSON data on the sidebar shows the cumulative scores. To clear, reload from your browser button.
 - This game only adds up numbers on the cards. Nothing fancy. It does not allow you to 'split' or 'double-down'. No bets either.
 ''')
 
@@ -40,6 +40,10 @@ def show_cards(cards_list, container):
         s = cards_surface[c]
         p = cards_style[int(c / 13)]
         surfaces.append(p + s + '</span>')
+
+    if len(surfaces) <= 0:
+        # 2025-09-11: st.html() のボディが空だと StreamlitAPIException が上がる (since 1.45.0)
+        return
 
     container.html(' '.join(surfaces))
 

@@ -3,5 +3,5 @@
 
 sentencepiece
 # streamlit                       # Standalone でテストするため
-transformers[ja]==4.51.3          # [ja] はここではいらないけど、第7章で使うのでテスト
+transformers==4.51.3              # [ja] は sudachipy が必要だが、Streamlit cloud には rust コンパイラがないのでインストールできないといわれる。あたしのところには rust ないけど入ったぞ。
 torch

@@ -2,6 +2,6 @@
 # 2026-03-27: transformers を version 4.51.3 で固定（でないと水色桜がいごかない）。現在のバージョンは 5.4.0。v5 になっていろいろ変わった模様。
 
 sentencepiece
-# streamlit          # Standalone でテストするため
-transformers==4.51.3
+# streamlit                       # Standalone でテストするため
+transformers[ja]==4.51.3          # [ja] はここではいらないけど、第7章で使うのでテスト
 torch

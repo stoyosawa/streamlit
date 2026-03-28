@@ -7,3 +7,5 @@ This app determines the emotion expressed in the Japanese sentence you enter. It
 The model used for the analysis is from Hugging Face: [Mizuiro-sakura/luke-japanese-large-sentiment-analysis-wrime](https://huggingface.co/Mizuiro-sakura/luke-japanese-large-sentiment-analysis-wrime). `Transofrmers` is used. The code is prepared for an entry‑level Python/Streamlt programming class.
 
 To play, visit the Streamlit Community Cloud: [https://sat-sentiment.streamlit.app/](https://sat-sentiment.streamlit.app/)
+
+Tested on transformers version 4.51.3. Does not work with v5 or later.

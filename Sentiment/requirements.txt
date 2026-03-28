@@ -4,4 +4,4 @@
 sentencepiece
 # streamlit          # Standalone でテストするため
 transformers==4.51.3
-pytorch
+torch

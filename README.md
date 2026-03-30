@@ -16,7 +16,7 @@ This repository contains the source code for web applications built with [Stream
 
 Streamlitコミュニティ上のアプリケーションはしばらく使われていないと退蔵されます。そうした状態でアクセスがあると、まず「起こしますか？」（再度起動させる）というメッセージが出ます。クリックすれば展開が開始されますが、けっこう時間がかかりますとくに感情分析アプリは大きめなモデルやTransformersなどのパッケージがロードされる時間もあるので、かなり長く待たされます。ご了承のほどを。
 
-これらアプリケーションは、『[作ってわかる［入門］Streamlit](https://gihyo.jp/book/2025/978-4-297-14764-8)』（技術評論社，2025年2月刊，400頁）で紹介したものです。書籍のものとコードがやや異なりますが、エッセンスは同じです。
+これらアプリケーションは、『[作ってわかる［入門］Streamlit](https://gihyo.jp/book/2025/978-4-297-14764-8)』（技術評論社，2025年2月刊，400頁）で紹介したものです。書籍のものとコードが異なるものもありますが、エッセンスは同じです。
 
 【<a href="https://gihyo.jp/book/2025/978-4-297-14764-8">技術評論社</a> | <a href="https://www.amazon.co.jp/dp/4297147645">Amazon.co.jp</a> | <a href="https://www.yodobashi.com/product/100000009004071953/">ヨドバシ</a> |<a href="https://books.rakuten.co.jp/rk/bbc9cea531f231fc8be07aff0d7da559/">楽天</a> | a href="https://honto.jp/ebook/pd_34122316.html">Honto</a> 】
 

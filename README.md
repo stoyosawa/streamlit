@@ -4,8 +4,7 @@
 
 - BlackJack ... Play: [https://sat-blackjack.streamlit.app/](https://sat-blackjack.streamlit.app/), Source: [`./BlackJack`](./BlackJack)
 - Sentiment analysis ... Play: [https://sat-sentiment.streamlit.app/](https://sat-sentiment.streamlit.app/), Source: [`./Sentiment`](./Sentiment)
-<!--streamlit の Python は 3.14.3. sudachipy の wheel がないのでエラーになる。sudachipy がサポートしているのは 3.13 まで。うちは 3.12.3 -->
-<!-- - Adding punctuations ... Play: [https://sat-punctuations.streamlit.app/](https://sat-punctuations.streamlit.app/), Source: [`./Punctuations`](./Punctuations) -->
+- Adding punctuations ... Play: [https://sat-punctuations.streamlit.app/](https://sat-punctuations.streamlit.app/), Source: [`./Punctuations`](./Punctuations)
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1920px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" width="30"> English
 
@@ -13,9 +12,7 @@ This repository contains the source code for web applications built with [Stream
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/960px-Flag_of_Japan.svg.png" width="30" border="1"> 日本語/Japanese
 
-このリポジトリでは、[Streamlit](https://streamlit.io/)＋[Python](https://docs.python.org/ja/3/)ベースのWebアプリケーションのコードを公開しています。ブラックジャック、テキストの感情分析です。
-
-<!-- テキストへの句読点の追加（音声起こしなどで句読点が適切に加えられていないときに使います）-->
+このリポジトリでは、[Streamlit](https://streamlit.io/)＋[Python](https://docs.python.org/ja/3/)ベースのWebアプリケーションのコードを公開しています。ブラックジャック、テキストの感情分析、テキストへの句読点の追加（音声起こしなどで句読点が適切に加えられていないときに使います）。
 
 Streamlitコミュニティ上のアプリケーションはしばらく使われていないと退蔵されます。そうした状態でアクセスがあると、まず「起こしますか？」（再度起動させる）というメッセージが出ます。クリックすれば展開が開始されますが、けっこう時間がかかりますとくに感情分析アプリは大きめなモデルやTransformersなどのパッケージがロードされる時間もあるので、かなり長く待たされます。ご了承のほどを。
 

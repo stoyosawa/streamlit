@@ -1,7 +1,8 @@
 # 2025-03-11: 最初のバージョン
 # 2026-03-27: transformers を version 4.51.3 で固定（でないと水色桜がいごかない）。現在のバージョンは 5.4.0。v5 になっていろいろ変わった模様。
+#             [ja] を入れると sudachipy が必要だが、Streamlit cloud には rust コンパイラがないのでインストールできないといわれる。あたしのところには rust ないけど入ったぞ。
 
 sentencepiece
 # streamlit                       # Standalone でテストするため
-transformers==4.51.3              # [ja] は sudachipy が必要だが、Streamlit cloud には rust コンパイラがないのでインストールできないといわれる。あたしのところには rust ないけど入ったぞ。
+transformers==4.51.3              # 固定
 torch

@@ -2,9 +2,9 @@
 
 <img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png" width="300">
 
-- Blackjack ... Play: [https://sat-blackjack.streamlit.app/](https://sat-blackjack.streamlit.app/), Source: [./Blackjack](`./Blackjack`)
-- Sentiment analysis ... Play: [https://sat-sentiment.streamlit.app/](https://sat-sentiment.streamlit.app/), Source: [./Sentiment](`./Sentiment`)
-- Adding punctuations ... Play: [https://sat-punctuations.streamlit.app/](https://sat-punctuations.streamlit.app/)], Source: [./Punctioations](`./Punctuations`)
+- Blackjack ... Play: [https://sat-blackjack.streamlit.app/](https://sat-blackjack.streamlit.app/), Source: [`./Blackjack`](./Blackjack)
+- Sentiment analysis ... Play: [https://sat-sentiment.streamlit.app/](https://sat-sentiment.streamlit.app/), Source: [`./Sentiment`](./Sentiment)
+- Adding punctuations ... Play: [https://sat-punctuations.streamlit.app/](https://sat-punctuations.streamlit.app/), Source: [`./Punctuations`](./Punctuations)
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1920px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" width="30"> English
 
